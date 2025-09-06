@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:service_box/app/utlies/apps_color.dart';
+import 'package:service_box/core/colors/colors_widgets.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -55,7 +54,7 @@ class WelcomeScreen extends StatelessWidget {
                   // 📄 Text and Button Section
                   GestureDetector(
                     onTap: () {
-                      context.go("");
+                      context.go("/onBoardingScreen");
                     },
                     child: Container(
                       width: 300,

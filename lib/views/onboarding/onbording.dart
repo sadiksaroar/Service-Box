@@ -1,20 +1,5 @@
 import 'package:flutter/material.dart';
-
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: OnBoardingScreen(),
-    );
-  }
-}
+import 'package:service_box/core/colors/colors_widgets.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({super.key});
@@ -41,7 +26,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
           "We provide top-notch security to make sure your data is safe and reliable at all times.",
     },
     {
-      "image": "assets/on3.png",
+      "image": "assets/images/welcomeScreen/second.png",
       "title": "Fast & Easy",
       "subtitle":
           "Enjoy fast performance with a seamless experience across all devices.",
@@ -51,6 +36,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.stroke,
       body: SafeArea(
         child: Column(
           children: [
