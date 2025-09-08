@@ -5,6 +5,7 @@ class AppColors {
   static const Color splashBackgroundColor = Colors.white; // main bg color
   // wecome button backGroundColor
   static const Color welcomeButtonBackColor = Colors.black;
+  static const Color buttonColor = Color(0xFF4F85AA);
 
   // Background
   static const Color whiteBackground = Color(0xFFF8F9FB);
