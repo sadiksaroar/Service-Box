@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:service_box/core/colors/colors_widgets.dart';
+import 'package:service_box/core/widgets/custom_app_subtitleText.dart';
+import 'package:service_box/core/widgets/custom_button.dart';
+import 'package:service_box/core/widgets/custom_headingText.dart';
+import 'package:service_box/core/widgets/custom_textField.dart';
+import 'package:service_box/views/auth/newPassword/popup_screen.dart';
 // import 'CongratulationsPopup.dart'; // Import the CongratulationsPopup class
 
 class NewPassword extends StatefulWidget {
@@ -22,15 +28,19 @@ class _NewPasswordState extends State<NewPassword> {
         backgroundColor: Colors.white,
         toolbarHeight: 80,
         centerTitle: true,
-        title: Image.asset("assets/images/Logo 4.png", height: 83, width: 88),
+        title: Image.asset(
+          "assets/images/Group 133553.png",
+          height: 83,
+          width: 88,
+        ),
         leading: IconButton(
           icon: Image.asset(
-            "assets/icons/Back_Icon.png",
+            "assets/images/icon/Back_Icon.png",
             height: 44,
             width: 44,
           ),
           onPressed: () {
-            context.push('/signin');
+            context.pop('/signin');
           },
         ),
         elevation: 0,

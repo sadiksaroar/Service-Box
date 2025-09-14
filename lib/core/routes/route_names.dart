@@ -9,5 +9,6 @@ class AppRoutePaths {
   static const String forgetPassword = "/forgetPassword";
   static const String newPassword = "/newPassword";
   static const String popupScreen = "/popupScreen";
+  static const String enterCode = "/enterCode";
   /* auth screen end here */
 }

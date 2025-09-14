@@ -33,7 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
           children: [
             /// ✅ image path থেকে space সরাও
             Image.asset(
-              "assets/images/splashScreenLogo.png", // ফাইলের নাম পরিবর্তন করে দাও
+              "assets/images/Group 133553.png", // ফাইলের নাম পরিবর্তন করে দাও
               height: 250.h,
               width: 250.w,
               fit: BoxFit.contain,

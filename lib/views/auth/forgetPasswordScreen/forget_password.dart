@@ -42,15 +42,19 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
         backgroundColor: Colors.white,
         toolbarHeight: 80,
         centerTitle: true,
-        title: Image.asset("assets/images/Logo 4.png", height: 83, width: 88),
+        title: Image.asset(
+          "assets/images/Group 133553.png",
+          height: 83,
+          width: 88,
+        ),
         leading: IconButton(
           icon: Image.asset(
-            "assets/icons/Back_Icon.png",
+            "assets/images/icon/Back_Icon.png",
             height: 44,
             width: 44,
           ),
           onPressed: () {
-            context.push('/signin');
+            context.pop('/signin');
           },
         ),
 
@@ -108,7 +112,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
                 child: CustomButton(
                   onPressed: isEmailFilled
                       ? () {
-                          context.go('/enterCode');
+                          context.push('/newPassword');
                         }
                       : null,
                   backgroundColor: isEmailFilled

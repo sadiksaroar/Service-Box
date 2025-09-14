@@ -43,7 +43,7 @@ class _SiginInViewsState extends State<SiginInViews> {
                         borderRadius: BorderRadius.circular(16),
                       ),
                       child: Center(
-                        child: Image.asset("assets/images/Logo 4.png"),
+                        child: Image.asset("assets/images/Group 133553.png"),
                       ),
                     ),
                   ),
@@ -134,7 +134,7 @@ class _SiginInViewsState extends State<SiginInViews> {
                       tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                     ),
                     child: InkWell(
-                      onTap: () => {context.go("/forgetPasswordScreen")},
+                      onTap: () => {context.push("/forgetPassword")},
                       child: const Text(
                         'Forgot password?',
                         style: TextStyle(
@@ -171,7 +171,7 @@ class _SiginInViewsState extends State<SiginInViews> {
                   ),
                 ),
                 onPressed: () {
-                  context.go('/homeViewPage');
+                  context.push('/homeViewPage');
                 },
               ),
               SizedBox(height: 20),
@@ -192,7 +192,7 @@ class _SiginInViewsState extends State<SiginInViews> {
                   TextButton(
                     onPressed: () {
                       // Sign up action
-                      context.go("/signUp");
+                      context.push("/signUp");
                     },
                     style: TextButton.styleFrom(
                       padding: EdgeInsets.zero,

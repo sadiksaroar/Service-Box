@@ -1,5 +1,7 @@
 import 'package:go_router/go_router.dart';
 import 'package:service_box/core/routes/route_names.dart';
+import 'package:service_box/views/auth/entrcode/enter_code.dart';
+import 'package:service_box/views/auth/forgetPasswordScreen/forget_password.dart';
 import 'package:service_box/views/auth/newPassword/new_password.dart';
 import 'package:service_box/views/auth/newPassword/popup_screen.dart';
 import 'package:service_box/views/auth/signIn/sign_inPage.dart';
@@ -41,6 +43,14 @@ class AppRoutes {
       GoRoute(
         path: AppRoutePaths.popupScreen,
         builder: (context, state) => CongratulationsPopup(),
+      ),
+      GoRoute(
+        path: AppRoutePaths.forgetPassword,
+        builder: (context, state) => ForgetPasswordScreen(),
+      ),
+      GoRoute(
+        path: AppRoutePaths.enterCode,
+        builder: (context, state) => EnterCode(),
       ),
       /* auth screen end  here */
     ],
