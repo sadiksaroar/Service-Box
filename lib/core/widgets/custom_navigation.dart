@@ -53,22 +53,28 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
                 isSelected: widget.currentIndex == 0,
               ),
               _buildNavItem(
-                icon: Icons.crop_free,
-                label: 'Scan',
+                icon: Icons.search,
+                label: 'Serach',
                 index: 1,
                 isSelected: widget.currentIndex == 1,
               ),
               _buildNavItem(
-                icon: Icons.medication,
-                label: 'Medications',
+                icon: Icons.assessment,
+                label: 'Bookings',
                 index: 2,
                 isSelected: widget.currentIndex == 2,
               ),
               _buildNavItem(
-                icon: Icons.settings,
+                icon: Icons.chat_bubble,
                 label: 'Settings',
                 index: 3,
                 isSelected: widget.currentIndex == 3,
+              ),
+              _buildNavItem(
+                icon: Icons.person,
+                label: 'Profile',
+                index: 4,
+                isSelected: widget.currentIndex == 4,
               ),
             ],
           ),
@@ -93,8 +99,10 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
     required int index,
     required bool isSelected,
   }) {
-    final iconColor = isSelected ? AppColors.stroke : AppColors.grey;
-    final textColor = isSelected ? AppColors.delete : AppColors.stroke2;
+    final iconColor = isSelected ? AppColors.text : AppColors.buttonColor;
+    final textColor = isSelected
+        ? AppColors.buttonColor
+        : AppColors.welcomeButtonBackColor;
 
     return GestureDetector(
       onTap: () {

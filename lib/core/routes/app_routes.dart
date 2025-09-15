@@ -7,6 +7,11 @@ import 'package:service_box/views/auth/newPassword/popup_screen.dart';
 import 'package:service_box/views/auth/signIn/sign_inPage.dart';
 import 'package:service_box/views/auth/signUp/sign_up.dart';
 import 'package:service_box/views/onboarding/onbording.dart';
+import 'package:service_box/views/screens/booking/booking_screen.dart';
+import 'package:service_box/views/screens/chat/chat.dart';
+import 'package:service_box/views/screens/home/home.dart';
+import 'package:service_box/views/screens/profile/profile.dart';
+import 'package:service_box/views/screens/serach/search.dart';
 import 'package:service_box/views/splash/splash_view.dart';
 import 'package:service_box/views/welcomes/wecome_screen.dart';
 
@@ -53,6 +58,48 @@ class AppRoutes {
         builder: (context, state) => EnterCode(),
       ),
       /* auth screen end  here */
+
+      /* auth screen end here */
+      // ===================<>===============//
+
+      /* home screen start here */
+      GoRoute(
+        path: AppRoutePaths.homeViewPage,
+        builder: (context, state) => HomeViewPage(),
+      ),
+      /* home screen end  here */
+
+      // ===================<>===============//
+      /* search screen start here */
+      GoRoute(
+        path: AppRoutePaths.search,
+        builder: (context, state) => Search(),
+      ),
+      /* search screen end  here */
+      // ===================<>===============//
+
+      /* Bookings screen start here */
+      GoRoute(
+        path: AppRoutePaths.bookings,
+        builder: (context, state) => BookingScreen(),
+      ),
+      /* Bookings screen end  here */
+      // ===================<>===============//
+
+      /* Chat screen start here */
+      GoRoute(
+        path: AppRoutePaths.chat, // sadik
+        builder: (context, state) => Chat(),
+      ),
+      /* Chat screen end  here */
+      // ===================<>===============//
+
+      /* Profile screen start here */
+      GoRoute(
+        path: AppRoutePaths.profile, // sadik
+        builder: (context, state) => Profile(),
+      ),
+      /* Profile screen end  here */
     ],
   );
 }
