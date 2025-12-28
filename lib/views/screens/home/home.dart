@@ -58,14 +58,12 @@ class _HomeViewPageState extends State<HomeViewPage>
       case 1:
         context.go(AppRoutePaths.search);
         break;
+
       case 2:
-        context.go(AppRoutePaths.bookings);
-        break;
-      case 3:
         context.go(AppRoutePaths.chat);
         break;
-      case 4:
-        context.go(AppRoutePaths.profile);
+      case 3:
+        context.go(AppRoutePaths.menue);
         break;
     }
   }

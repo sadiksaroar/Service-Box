@@ -33,7 +33,7 @@ class _BookingScreenState extends State<BookingScreen> {
         context.go(AppRoutePaths.chat);
         break;
       case 4:
-        context.go(AppRoutePaths.profile);
+        context.go(AppRoutePaths.menue);
         break;
     }
   }

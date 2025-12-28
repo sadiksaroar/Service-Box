@@ -10,8 +10,8 @@ import 'package:service_box/views/onboarding/onbording.dart';
 import 'package:service_box/views/screens/booking/booking_screen.dart';
 import 'package:service_box/views/screens/chat/chat.dart';
 import 'package:service_box/views/screens/home/home.dart';
-import 'package:service_box/views/screens/profile/profile.dart';
-import 'package:service_box/views/screens/serach/search.dart';
+import 'package:service_box/views/screens/maps/search.dart';
+import 'package:service_box/views/screens/menu/menu.dart';
 import 'package:service_box/views/splash/splash_view.dart';
 import 'package:service_box/views/welcomes/wecome_screen.dart';
 
@@ -96,8 +96,8 @@ class AppRoutes {
 
       /* Profile screen start here */
       GoRoute(
-        path: AppRoutePaths.profile, // sadik
-        builder: (context, state) => Profile(),
+        path: AppRoutePaths.menue, // sadik
+        builder: (context, state) => const Menue(),
       ),
       /* Profile screen end  here */
     ],

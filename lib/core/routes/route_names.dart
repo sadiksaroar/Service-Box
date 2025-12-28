@@ -39,7 +39,7 @@ class AppRoutePaths {
   // ===================<>===============//
 
   /* Profile screen start here */
-  static const String profile = '/profile';
+  static const String menue = '/menue';
 
   /* Profile screen end  here */
 }

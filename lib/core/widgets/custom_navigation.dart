@@ -23,7 +23,7 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
     super.didUpdateWidget(oldWidget);
     if (widget.currentIndex != oldWidget.currentIndex) {
       _barPosition =
-          MediaQuery.of(context).size.width / 5 * widget.currentIndex;
+          MediaQuery.of(context).size.width / 4 * widget.currentIndex;
     }
   }
 
@@ -53,28 +53,28 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
                 isSelected: widget.currentIndex == 0,
               ),
               _buildNavItem(
-                icon: Icons.search,
-                label: 'Serach',
+                icon: Icons.location_on,
+                label: 'place',
                 index: 1,
                 isSelected: widget.currentIndex == 1,
               ),
+              // _buildNavItem(
+              //   icon: Icons.assessment,
+              //   label: 'Bookings',
+              //   index: 2,
+              //   isSelected: widget.currentIndex == 2,
+              // ),
               _buildNavItem(
-                icon: Icons.assessment,
-                label: 'Bookings',
+                icon: Icons.chat_bubble,
+                label: 'Chats',
                 index: 2,
                 isSelected: widget.currentIndex == 2,
               ),
               _buildNavItem(
-                icon: Icons.chat_bubble,
-                label: 'Settings',
+                icon: Icons.menu,
+                label: 'Menu',
                 index: 3,
                 isSelected: widget.currentIndex == 3,
-              ),
-              _buildNavItem(
-                icon: Icons.person,
-                label: 'Profile',
-                index: 4,
-                isSelected: widget.currentIndex == 4,
               ),
             ],
           ),
@@ -84,7 +84,7 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
             duration: const Duration(milliseconds: 300),
             child: Container(
               height: 3,
-              width: MediaQuery.of(context).size.width / 5,
+              width: MediaQuery.of(context).size.width / 4,
               color: Colors.white,
             ),
           ),
@@ -108,7 +108,7 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
       onTap: () {
         widget.onTap(index);
         setState(() {
-          _barPosition = MediaQuery.of(context).size.width / 5 * index;
+          _barPosition = MediaQuery.of(context).size.width / 4 * index;
         });
       },
       child: Container(
